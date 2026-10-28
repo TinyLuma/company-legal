@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "company": {
+    "legal_name": {
+      "en": "TINYLUMA TECHNOLOGY LIMITED",
+      "zh-Hans": "小小露玛科技有限公司",
+      "zh-Hant": "小小露瑪科技有限公司"
+    },
+    "registered_address": {
+      "en": "FLAT/RM B 850 8/F TAI KING INDUSTRIAL BUILDING SAN PO KONG KL",
+      "zh-Hans": "香港九龙新蒲岗泰景工业大楼8楼B 850",
+      "zh-Hant": "香港九龍新蒲崗泰景工業大樓8樓B 850",
+      "postal_code": "999077"
+    },
+    "email": "support@tinyluma.ai"
+  },
+  "languages": [
+    {"code": "en", "name": "英语"},
+    {"code": "zh-CN", "name": "简体中文"},
+    {"code": "zh-TW", "name": "繁体中文"},
+    {"code": "es", "name": "西班牙语"},
+    {"code": "vi", "name": "越南语"},
+    {"code": "fil", "name": "菲律宾语"},
+    {"code": "ko", "name": "韩语"},
+    {"code": "ar", "name": "阿拉伯语"}
+  ],
+  "notes": [
+    "zh-Hans 法定名称和地址是所提供繁体中文的简体写法，不是另一家公司。",
+    "目前只确认一个公司邮箱。隐私政策的隐私联系邮箱和条款的支持邮箱都使用该邮箱。",
+    "简体中文政策使用 zh-Hans，繁体中文政策使用 zh-Hant。英语、西班牙语、越南语、菲律宾语、韩语、阿拉伯语政策中的法定名称和注册地址使用英文，不另行翻译。",
+    "languages 是产品要支持的语言，文件名沿用这些代码。各 App 实际已有的正文仍以 apps.json 为准。"
+  ]
+}

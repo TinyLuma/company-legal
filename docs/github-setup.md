@@ -19,21 +19,21 @@
 
 | 用途 | URL 格式 |
 | --- | --- |
-| 在 GitHub 中阅读 | `https://github.com/OWNER/REPO/blob/main/apps/tinyluma/privacy/en.md` |
-| App 下载 Markdown | `https://raw.githubusercontent.com/OWNER/REPO/main/apps/tinyluma/privacy/en.md` |
-| 程序发现所有文档路径 | `https://raw.githubusercontent.com/OWNER/REPO/main/apps.json` |
+| 在 GitHub 中阅读 | `https://github.com/TinyLuma/company-legal/blob/main/apps/breastfeeding-timer/privacy/en.md` |
+| App 下载 Markdown | `https://raw.githubusercontent.com/TinyLuma/company-legal/main/apps/breastfeeding-timer/privacy/en.md` |
+| 程序发现所有文档路径 | `https://raw.githubusercontent.com/TinyLuma/company-legal/main/apps.json` |
 
-将 OWNER、REPO 替换为你的实际值；如默认分支不是 main，也要更换分支名。本包没有替你创建 GitHub 仓库。
+公开仓库为 [TinyLuma/company-legal](https://github.com/TinyLuma/company-legal)，默认分支为 `main`。其他语言把路径末尾的 `en.md` 换成对应文件名。
 
 ## JavaScript 读取示例
 
 ```js
-const owner = 'YOUR_GITHUB_OWNER';
+const owner = 'TinyLuma';
 const repo = 'company-legal';
 const base = `https://raw.githubusercontent.com/${owner}/${repo}/main/`;
 
 async function loadPolicy() {
-  const response = await fetch(`${base}apps/tinyluma/privacy/en.md`);
+  const response = await fetch(`${base}apps/breastfeeding-timer/privacy/en.md`);
   if (!response.ok) throw new Error(`Policy request failed: ${response.status}`);
   const markdown = await response.text();
   if (!markdown.trim()) throw new Error('Policy is empty');

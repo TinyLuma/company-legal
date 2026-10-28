@@ -2,21 +2,33 @@
   "schema_version": 1,
   "apps": [
     {
-      "id": "tinyluma",
+      "id": "breastfeeding-timer",
       "name": "TinyLuma",
       "status": "draft",
       "source_version": "5.0",
       "source_date": "2026-10-10",
-      "effective_date": null,
-      "updated_at": null,
+      "effective_date": "2026-11-01",
+      "updated_at": "2026-10-28",
       "documents": {
         "privacy": {
-          "zh-CN": "apps/tinyluma/privacy/zh-CN.md",
-          "en": "apps/tinyluma/privacy/en.md"
+          "en": "apps/breastfeeding-timer/privacy/en.md",
+          "zh-CN": "apps/breastfeeding-timer/privacy/zh-CN.md",
+          "es": "apps/breastfeeding-timer/privacy/es.md",
+          "zh-TW": "apps/breastfeeding-timer/privacy/zh-TW.md",
+          "vi": "apps/breastfeeding-timer/privacy/vi.md",
+          "fil": "apps/breastfeeding-timer/privacy/fil.md",
+          "ko": "apps/breastfeeding-timer/privacy/ko.md",
+          "ar": "apps/breastfeeding-timer/privacy/ar.md"
         },
         "terms": {
-          "zh-CN": "apps/tinyluma/terms/zh-CN.md",
-          "en": "apps/tinyluma/terms/en.md"
+          "en": "apps/breastfeeding-timer/terms/en.md",
+          "zh-CN": "apps/breastfeeding-timer/terms/zh-CN.md",
+          "es": "apps/breastfeeding-timer/terms/es.md",
+          "zh-TW": "apps/breastfeeding-timer/terms/zh-TW.md",
+          "vi": "apps/breastfeeding-timer/terms/vi.md",
+          "fil": "apps/breastfeeding-timer/terms/fil.md",
+          "ko": "apps/breastfeeding-timer/terms/ko.md",
+          "ar": "apps/breastfeeding-timer/terms/ar.md"
         }
       }
     }

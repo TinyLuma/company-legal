@@ -2,19 +2,19 @@
 
 ## 改一个 App
 
-打开 `apps/<app-id>/`，修改对应 `privacy` 或 `terms` 下的语言文件，然后检查其他语言和相关条款，更新清单日期及变更记录。固定文件名不变。
+打开 `apps/<app-id>/`，修改对应 `privacy` 或 `terms` 下的语言文件，然后检查其他语言和相关条款，更新清单日期及变更记录。固定文件名不变。运营主体、注册地址和公司邮箱先读 `company.json`，不要另写一套公司身份。
 
 可以直接交给 AI：
 
-> 先读 AGENTS.md。仅修改 tinyluma，把隐私联系邮箱改为我提供的新邮箱（在这里填写），同步中英文及相关出现位置。不要改变条款含义。更新清单和变更记录，运行检查并给我看 diff。
+> 先读 AGENTS.md。仅修改 breastfeeding-timer，把隐私联系邮箱改为我提供的新邮箱（在这里填写），同步全部语言及相关出现位置。不要改变条款含义。更新清单和变更记录，运行检查并给我看 diff。
 
 ## 批量改多个 App
 
-> 先读 AGENTS.md 和 apps.json。把 tinyluma、另一个已登记的 App 的支持邮箱改为我提供的新邮箱（在这里填写）。逐 App 查找中英文所有相关位置并修改，保留各 App 的其他差异，更新变更记录并检查。不要修改未指定 App。
+> 先读 AGENTS.md 和 apps.json。把 breastfeeding-timer、另一个已登记的 App 的支持邮箱改为我提供的新邮箱（在这里填写）。逐 App 查找全部语言的相关位置并修改，保留各 App 的其他差异，更新变更记录并检查。不要修改未指定 App。
 
-> 先读 AGENTS.md。检查清单中全部 App，列出每个 App 的隐私联系邮箱及文件位置；把符合指定旧邮箱的出现位置统一替换为我提供的新邮箱，中英文一起核对，不要修改其他公司身份或订阅配置。完成后展示逐 App 的变更摘要。
+> 先读 AGENTS.md。检查清单中全部 App，列出每个 App 的隐私联系邮箱及文件位置；把符合指定旧邮箱的出现位置统一替换为我提供的新邮箱，全部语言一起核对，不要修改其他公司身份或订阅配置。完成后展示逐 App 的变更摘要。
 
-把示例中的值换成实际值即可。全公司信息变更仍需逐份正文落盘，不依赖公共模板动态拼接，保证每个 App 的政策可单独读取。
+把示例中的值换成实际值即可。全公司的名称、地址或邮箱变更，先改 `company.json`，再逐份正文落盘；不依赖公共模板动态拼接，保证每个 App 的政策可单独读取。价格、供应商、数据处理和试用安排仍按各 App 自己的正文处理。
 
 ## 新增 App
 
@@ -30,20 +30,20 @@
 
 ```bash
 python3 scripts/check.py
-python3 scripts/check.py --app tinyluma
+python3 scripts/check.py --app breastfeeding-timer
 ```
 
 发布前检查（当前包因草稿和占位符应失败）：
 
 ```bash
-python3 scripts/check.py --release --app tinyluma
+python3 scripts/check.py --release --app breastfeeding-timer
 ```
 
 单 App 提交例子，先检查 diff，确认只包含本次修改：
 
 ```bash
 git diff
-git add apps/tinyluma apps.json CHANGELOG.md
+git add apps/breastfeeding-timer apps.json CHANGELOG.md
 git commit -m "Update TinyLuma policies"
 git push origin main
 ```

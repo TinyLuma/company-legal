@@ -1,9 +1,9 @@
 # TinyLuma｜Privacy Policy
 
-**Effective date:** [To be completed]  
-**Operator:** [Legal entity name] (“we,” “us,” or “our”)  
-**Mailing address:** [To be completed]  
-**Privacy contact:** [To be completed]
+**Effective date:** 2026-11-01  
+**Operator:** TINYLUMA TECHNOLOGY LIMITED (“we,” “us,” or “our”)  
+**Mailing address:** FLAT/RM B 850 8/F TAI KING INDUSTRIAL BUILDING SAN PO KONG KL, postal code 999077  
+**Privacy contact:** support@tinyluma.ai
 
 This policy explains how TinyLuma handles personal information. TinyLuma helps adult parents and caregivers record nursing sessions, review records, and use related quick-access features.
 
@@ -72,5 +72,5 @@ We may update this policy and its effective date. We will communicate material c
 
 ### 8. Contact
 
-For privacy questions and requests, contact **[Privacy email]**.  
-Operator and address: **[Legal entity and mailing address]**.
+For privacy questions and requests, contact **support@tinyluma.ai**.  
+Operator and address: **TINYLUMA TECHNOLOGY LIMITED, FLAT/RM B 850 8/F TAI KING INDUSTRIAL BUILDING SAN PO KONG KL, postal code 999077**.

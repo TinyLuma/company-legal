@@ -106,6 +106,53 @@ for app in apps:
             fail(f'Unregistered document: {rel}')
 if not selected:
     fail(f'No matching App: {args.app or "(empty manifest)"}')
+
+def require_text(obj, key, label):
+    value = obj.get(key) if isinstance(obj, dict) else None
+    if not isinstance(value, str) or not value.strip():
+        fail(f'company.json: Missing {label}')
+
+try:
+    company_doc = json.loads((ROOT / 'company.json').read_text(encoding='utf-8'))
+except (OSError, ValueError) as exc:
+    fail(f'Cannot read company.json: {exc}')
+    company_doc = None
+if isinstance(company_doc, dict):
+    if company_doc.get('schema_version') != 1:
+        fail('company.json: Expected schema_version=1')
+    company = company_doc.get('company')
+    if not isinstance(company, dict):
+        fail('company.json: Missing company object')
+        company = {}
+    legal_name = company.get('legal_name')
+    address = company.get('registered_address')
+    for key in ('en', 'zh-Hans', 'zh-Hant'):
+        require_text(legal_name, key, f'legal_name.{key}')
+        require_text(address, key, f'registered_address.{key}')
+    require_text(address, 'postal_code', 'registered_address.postal_code')
+    email = company.get('email')
+    if not isinstance(email, str) or not re.fullmatch(r'[^@\s]+@[^@\s]+\.[^@\s]+', email or ''):
+        fail('company.json: Invalid email')
+    languages = company_doc.get('languages')
+    if not isinstance(languages, list) or not languages:
+        fail('company.json: Missing languages')
+    else:
+        seen = set()
+        for item in languages:
+            if not isinstance(item, dict):
+                fail('company.json: Each language must be an object')
+                continue
+            code = item.get('code')
+            if not isinstance(code, str) or not re.fullmatch(r'[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*', code):
+                fail(f'company.json: Invalid language code {code!r}')
+                continue
+            if code in seen:
+                fail(f'company.json: Duplicate language {code}')
+            seen.add(code)
+            if not isinstance(item.get('name'), str) or not item['name'].strip():
+                fail(f'company.json: Missing name for {code}')
+elif company_doc is not None:
+    fail('company.json: Expected an object')
 if not args.app:
     for path in (ROOT / 'apps').iterdir():
         if path.is_dir() and path.name not in ids:

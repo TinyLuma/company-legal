@@ -1,9 +1,9 @@
 # TinyLuma｜Terms of Use and Subscription
 
-**Effective date:** [To be completed]  
-**Operator:** [Legal entity name] (“we,” “us,” or “our”)  
-**Mailing address:** [To be completed]  
-**Support:** [To be completed]
+**Effective date:** 2026-11-01  
+**Operator:** TINYLUMA TECHNOLOGY LIMITED (“we,” “us,” or “our”)  
+**Mailing address:** FLAT/RM B 850 8/F TAI KING INDUSTRIAL BUILDING SAN PO KONG KL, postal code 999077  
+**Support:** support@tinyluma.ai
 
 These terms apply to TinyLuma and TinyLuma subscriptions purchased through Apple's App Store. Before purchasing, review the selected plan's price, billing period, included functionality, and trial details.
 
@@ -80,11 +80,11 @@ Purchase restoration does not guarantee restoration of local nursing records, ea
 
 Apple generally handles refund requests for App Store purchases under its rules. Visit [reportaproblem.apple.com](https://reportaproblem.apple.com/) to submit an applicable request. Canceling renewal does not itself guarantee a refund of previous charges. These terms do not limit refund or other consumer rights under applicable law.
 
-Contact [Support email] for service issues. Provide necessary purchase or problem information without full payment card details or unnecessary sensitive nursing information.
+Contact support@tinyluma.ai for service issues. Provide necessary purchase or problem information without full payment card details or unnecessary sensitive nursing information.
 
 ### 10. Privacy, changes, and responsibility
 
-Our Privacy Policy (official URL: [To be completed]) explains personal information processing. It and these terms are available through text links in the subscription overlay and at the bottom of settings. A subscription is not required to read the policy or submit a privacy request.
+Our Privacy Policy (official URL: https://github.com/TinyLuma/company-legal/blob/main/apps/breastfeeding-timer/privacy/en.md) explains personal information processing. It and these terms are available through text links in the subscription overlay and at the bottom of settings. A subscription is not required to read the policy or submit a privacy request.
 
 We reasonably maintain the service, but network, device, platform, and system issues can affect availability. We address service issues according to our applicable obligations. These terms do not exclude or limit liability or consumer rights where doing so is prohibited by law.
 
@@ -92,6 +92,6 @@ For material changes, we update the effective date and provide notice through th
 
 ### 11. Contact
 
-Operator: **[Legal entity name]**  
-Address: **[Mailing address]**  
-Support: **[Support email]**
+Operator: **TINYLUMA TECHNOLOGY LIMITED**  
+Address: **FLAT/RM B 850 8/F TAI KING INDUSTRIAL BUILDING SAN PO KONG KL, postal code 999077**  
+Support: **support@tinyluma.ai**
