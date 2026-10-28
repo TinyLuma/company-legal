@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "apps": [
+    {
+      "id": "tinyluma",
+      "name": "TinyLuma",
+      "status": "draft",
+      "source_version": "5.0",
+      "source_date": "2026-10-10",
+      "effective_date": null,
+      "updated_at": null,
+      "documents": {
+        "privacy": {
+          "zh-CN": "apps/tinyluma/privacy/zh-CN.md",
+          "en": "apps/tinyluma/privacy/en.md"
+        },
+        "terms": {
+          "zh-CN": "apps/tinyluma/terms/zh-CN.md",
+          "en": "apps/tinyluma/terms/en.md"
+        }
+      }
+    }
+  ]
+}
